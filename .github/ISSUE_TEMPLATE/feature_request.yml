@@ -1,0 +1,19 @@
+name: Feature request
+description: An idea for something CantoWork should do.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: job
+    attributes:
+      label: What are you trying to get done?
+      description: Describe the task or outcome, not just the feature.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do it today?
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like CantoWork to do?
