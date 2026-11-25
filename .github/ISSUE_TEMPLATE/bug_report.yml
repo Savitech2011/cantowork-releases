@@ -1,0 +1,42 @@
+name: Bug report
+description: Something in CantoWork didn't work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make CantoWork better. Please don't paste API keys, passwords or private files here — this page is public.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you ask CantoWork to do, and what went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+  - type: input
+    id: version
+    attributes:
+      label: CantoWork version
+      description: Shown in the app under Settings → About, or at the bottom of cantowork.vercel.app.
+      placeholder: "1.5.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS (Apple silicon)
+    validations:
+      required: true
+  - type: textarea
+    id: bundle
+    attributes:
+      label: Support bundle (optional)
+      description: In the app, open Settings → Troubleshoot → Report a problem → Save bundle, then drag the file from your Downloads folder here. Keys, tokens and passwords are removed, and chats and files aren't included.
